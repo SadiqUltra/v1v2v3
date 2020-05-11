@@ -3,8 +3,7 @@
 
 namespace Sadiq;
 
-
 interface CompareInterface
 {
-    function compare($i, $toCompareWith, $isGrater);
+    public function compare($i, $toCompareWith, $isGrater);
 }

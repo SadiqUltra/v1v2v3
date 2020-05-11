@@ -3,8 +3,7 @@
 
 namespace Sadiq;
 
-
 interface TaskInterface
 {
-    function doATask();
+    public function doATask();
 }

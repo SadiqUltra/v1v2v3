@@ -48,8 +48,9 @@ class TaskV1
         $this->strCompare = $strCompare;
     }
 
-    public function setSpecial($isSpecial){
-        if (!$this->isSpecial){
+    public function setSpecial($isSpecial)
+    {
+        if (!$this->isSpecial) {
             $this->isSpecial = $isSpecial;
         }
     }
@@ -79,7 +80,8 @@ class TaskV1
         return $this;
     }
 
-    public function divider($i, $div, $str){
+    public function divider($i, $div, $str)
+    {
         if ($div && $i % $div == 0) {
             echo $str;
             $this->setSpecial(true);
@@ -92,7 +94,6 @@ class TaskV1
     public function doTask()
     {
         for ($i = $this->lowerLimit; $i <= $this->upperLimit; $i++) {
-
             $this->isSpecial = false;
 
             $this->arrayTask($i);
